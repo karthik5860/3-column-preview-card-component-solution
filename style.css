@@ -1,0 +1,108 @@
+/*  ===============
+    ------Body-----
+    ===============*/
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: "Lexend Deca";
+      background: hsl(0, 0%, 95%);
+    }
+/*  ===============
+    ------Main-----
+    ===============*/
+      main{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 50rem;
+      min-height: 27rem;
+      background: lightcoral;
+      grid-auto-columns: 3rem;
+      border-radius: .6rem;
+      overflow: hidden;
+    }
+/*  ===============
+    --------H1-----
+    ===============*/
+    h1{
+      font-family: "Big Shoulders Display";
+      color: hsl(0, 0%, 95%);
+    }
+/*  ===============
+    --------P------
+    ===============*/
+    p{
+      font-size: .9rem;
+      line-height: 1.3rem;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+/*  ===============
+    ------Cars-----
+    ===============*/
+    .car{
+      padding: 3rem;
+    }        
+    .sedans{
+      background: hsl(31, 77%, 52%);
+    }
+    .suvs{
+      background: hsl(184, 100%, 22%);
+    }
+    .luxury{
+      background: hsl(179, 100%, 13%);
+    } 
+
+/*  ===============
+    ----Button---
+    ===============*/
+
+    button{
+      border: none;
+      appearance: none;
+      width: 7.5rem;
+      height: 2.5rem;
+      border-radius: 2rem;
+      margin-top: 3rem;
+      font-family: "Lexend Deca";
+      background: hsl(0, 0%, 95%);
+      border: solid .15rem hsl(0, 0%, 95%);
+    }
+
+    .sedans button{
+      color: hsl(31, 77%, 52%);
+    }
+
+    
+    .suvs button{
+      color: hsl(184, 100%, 22%);
+    }    
+    
+    
+    .luxury button{
+      color: hsl(179, 100%, 13%);
+    } 
+
+    button:hover{
+      background: transparent;
+      cursor: pointer;
+      color: hsl(0, 0%, 95%);
+    }
+
+    @media screen and (max-width: 800px){
+      main{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media screen and (max-width: 550px){
+      main{
+        grid-template-columns: 1fr;
+        margin: 3rem .5rem;
+      }
+      .car{
+        padding: 2rem;
+      }
+      button{
+        margin-top: 0rem;
+      }
+    }
